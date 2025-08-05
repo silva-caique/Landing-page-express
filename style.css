@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
 
 
 main{
@@ -14,6 +14,9 @@ main{
     text-align: center;
 }
 
+h1{
+    font-family: "Libre Baskerville";
+}
 main>h1{
     font-size: clamp(2.5rem, 5vw, 5rem);
     padding: 30px;
@@ -25,17 +28,101 @@ main>p{
     font-size:clamp(1.2rem, 6vw, 1rem);
 }
 
-main>a{
-    font-size: 20px;
+.slide-up-hover {
+  transition: all 1.3s ease;
+  transform: translateY(0);
 }
 
-main>a>img{
+.slide-up-hover:hover {
+  transform: translateY(-10px);
+}
+
+.Sobre{
+    width: 100%;
+    height: 100vh;
+}
+
+.Sobre>h1{
+    text-align: center;
+    font-size: 3em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#card>p{
+   font-size:clamp(1.8rem, 2vw, 3rem);
+   margin: 15px;
+
+}
+
+#card{
+    max-width:90%;
+    max-height:90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(233, 236, 236);
+    box-shadow: 1px 1px 20px black;
+    border-radius: 20px;
+}
+
+#card:hover{
+    width: 650px;
+    height: 420px;
+    transition:1s;
+    background-color: rgb(202, 202, 202);
 }
 
 .incluso{
     height: 100vh;
     background-image: url("imagens/fundo2.png");
+    color: rgb(12, 12, 12);
 }
+.incluso>h1{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+  .inclusoo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .item {
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px; /* Responsivo: mínimo de 250px, ocupa mais se tiver espaço */
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .item p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 500px) {
+    .item {
+      flex: 1 1 100%;
+    }
+
+    .incluso {
+      padding: 1rem;
+    }
+
+    .incluso h1 {
+      font-size: 1.5rem;
+    }
+  }
 
 .Depoimento{
     height: 100vh;
