@@ -5,11 +5,14 @@
     padding: 0px;
 
   }
+  html{
+    scroll-behavior: smooth;
+  }
 
   h1{
     font-family: "Bebas Neue";
     text-align: center;
-    font-size: clamp(2em, 7vw, 6em);
+    font-size: clamp(3em, 7vw, 6em);
     padding-top: 140px;
     color: white;
   }
@@ -26,19 +29,6 @@
     padding-bottom: 20px;
   }
 
-  .link{
-    text-align: center;
-    margin-left: 560px;
-    background-color: rgb(243, 243, 243);
-    padding: 10px;
-    border-radius: 20px;
-    color: black;
-    box-shadow: 0px 0px 10px;
-  }
-
-  #zap{
-    width: 20px;
-  }
   nav{
     background-color: rgba(1, 77, 200, 0);
     color: white;
@@ -49,6 +39,7 @@
     flex-wrap: wrap;
     min-width: 600px
   }
+
   .nome{
     text-align: left;
     font-size: clamp(10px, 5vw, 20px);
@@ -79,28 +70,77 @@
     background-color: aliceblue;
 
   }
-  @media (max-width: 600px) {
+
+  #zap{
+    width: 30px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 1px 10px black;
+  }
+
+  #zap:hover{
+    background-color: rgb(104, 133, 228);
+    transition: 0.4s;
+    width: 35px;
+  }
+  @media screen and (max-width: 600px) {
   .links {
     flex-direction: column;
+    display: none;
     width: 100%;
     margin-top: 12px;
     }
   }
   body{
-    background-color: rgb(245, 244, 247);
+    background-color: rgb(238, 238, 238);
   }
+
   main{
-  background-color: rgb(224, 224, 224);
-  margin-left: 15px;
-  margin-right:15px ;
+  background-color: rgb(255, 255, 255);
+  }
+  
+  #sobre>h2{
+    text-align: center;
+    padding-top: 30px;
+    font-size: clamp(2em, 4vw, 3em);
+    padding-bottom: 30px;
   }
 
-  #sobre{
-
+  .carta{
+    width: 400px;
+    height: 350px;
+    background-color: rgb(104, 133, 228);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    box-shadow: 4px 1px 10px black; 
+  }
+  .carta>p{
+    font-size: 1.4em;
+    margin: 10px;
+    margin-top: 10px;
+    color: white;
+    text-align: justify;
+  }
+  
+  .carta:hover{
+    background-color: rgb(5, 45, 84);
+    transition: 1s;
+  }
+  @media screen and (max-width: 600px) {
+    .carta{
+      width: 80%;
+    }
+    .carta>p{
+      font-size: 20px;
+    }
   }
 
   section{
-     min-height: 100vh;
+    min-height: 100vh;
   }
   footer{
     background-color:  rgb(1, 78, 200);
