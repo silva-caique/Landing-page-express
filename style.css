@@ -138,7 +138,52 @@
       font-size: 20px;
     }
   }
+#incluso {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  font-size: clamp(2em, 4vw, 3em);
+}
+
+/* Container que organiza as cards lado a lado */
+.features-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* para responsividade */
+}
+
+/* Cards */
+.feature-item {
+  background:  rgb(104, 133, 228);
+  padding: 70px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 4px 1px 10px rgba(0, 0, 0, 0.995);
+  transition: transform 0.3s ease;
+  flex: 1 1 300px; /* base 300px, flexível para crescer */
+  max-width: 350px;
+  margin-bottom: 10px;
+}
+.feature-item>h3{
+  font-size: clamp(1.5em, 3vh, 2em);
+  padding-bottom: 8px;
+}
+
+.feature-item>p{
+  color: white;
+  font-size: clamp(1em, 3vh, 2.5em);
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+}
   section{
     min-height: 100vh;
   }
