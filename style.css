@@ -17,7 +17,8 @@
     color: white;
   }
   header{
-    background: linear-gradient(rgb(0, 0, 0), rgb(104, 133, 228));
+    background-image: url(imagens/pg1.png
+    );
     min-height: 100vh;
   }
   
@@ -85,12 +86,15 @@
     transition: 0.4s;
     width: 35px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 610px) {
   .links {
     flex-direction: column;
     display: none;
     width: 100%;
     margin-top: 12px;
+    }
+    .header{
+      background-image: url(imagens/pg11.png);
     }
   }
   body{
@@ -184,9 +188,22 @@
 .feature-item:hover {
   transform: translateY(-10px);
 }
+
+#contato{
+background: linear-gradient(to top, rgb(104, 133, 228), rgb(48, 100, 205));
+}
+#contato>h2{
+  text-align: center;
+  font-size: clamp(2em, 4vw, 3em);
+  padding-top: 30px;
+}
+
+#contato>p{
+  
+}
   section{
     min-height: 100vh;
   }
   footer{
-    background-color:  rgb(1, 78, 200);
+    background-color:  rgb(104, 133, 228);
   }
