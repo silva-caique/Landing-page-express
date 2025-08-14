@@ -12,6 +12,7 @@
   }
   html{
     scroll-behavior: smooth;
+    
   }
 
   h1{
@@ -44,7 +45,7 @@
     padding-bottom: 20px;
   }
 
-  nav{
+    nav {
     background-color: rgba(1, 77, 200, 0);
     color: white;
     display: flex;
@@ -52,7 +53,9 @@
     align-items: center;
     padding: 19px 32px;
     flex-wrap: wrap;
-    min-width: 600px
+    width: 100%; /* ocupa toda a largura */
+    min-width: unset; /* remove a largura mínima */
+    box-sizing: border-box; /* evita que o padding ultrapasse */
   }
 
   .nome{
@@ -107,12 +110,11 @@
     width: 100%;
     margin-top: 12px;
     }
-    .header{
-      background-image: url(imagens/pg11.png);
-    }
+    
   }
   body{
     background-color: rgb(238, 238, 238);
+    
   }
 
   main{
