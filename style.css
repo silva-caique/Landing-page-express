@@ -17,8 +17,10 @@
     color: white;
   }
   header{
-    background-image: url(imagens/pg1.png
-    );
+    background-image: url(imagens/pg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     min-height: 100vh;
   }
   
@@ -58,14 +60,14 @@
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: clamp(10px, 5vw, 20px);
-    background-color:rgba(1, 77, 200, 0.564); 
+    background-color:#003F79; 
     padding: 4px;
     border-radius: 5px;
     
   }
 
   .links :hover{
-    color: rgb(1, 78, 200);
+    color: #003F79;
     transition: 1s;
     text-decoration: underline;
     background-color: aliceblue;
@@ -82,7 +84,7 @@
   }
 
   #zap:hover{
-    background-color: rgb(104, 133, 228);
+    background-color: #003F79;
     transition: 0.4s;
     width: 35px;
   }
@@ -115,7 +117,7 @@
   .carta{
     width: 400px;
     height: 350px;
-    background-color: rgb(104, 133, 228);
+    background-color: #003F79;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -131,7 +133,7 @@
   }
   
   .carta:hover{
-    background-color: rgb(5, 45, 84);
+    background-color: rgb(65, 153, 241);
     transition: 1s;
   }
   @media screen and (max-width: 600px) {
@@ -165,7 +167,7 @@
 
 /* Cards */
 .feature-item {
-  background:  rgb(104, 133, 228);
+  background:  #003F79;
   padding: 70px;
   border-radius: 20px;
   text-align: center;
@@ -190,20 +192,62 @@
 }
 
 #contato{
-background: linear-gradient(to top, rgb(104, 133, 228), rgb(48, 100, 205));
+background-image: url(imagens/dois.png);
+background-size: cover;
+background-position: center;
 }
 #contato>h2{
+  color: white;
   text-align: center;
   font-size: clamp(2em, 4vw, 3em);
   padding-top: 30px;
 }
 
-#contato>p{
+.insta{
+  margin: 20px;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 4px 1px 10px white;
+  text-decoration: none;
   
+}
+
+#contato>p{
+  color: #ffffff;
+  margin: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: clamp(1em, 4vw, 1.5em);
+}
+
+.zapzap{
+  margin: 20px;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 4px 1px 10px white;
+  text-decoration: none;
+  
+}
+
+.zapzap:hover{
+  background-color: rgb(17, 255, 0);
+  box-shadow: 4px 1px 10px rgb(13, 255, 0);
+  transition: 1s;
+  color: #ffffff;
+}
+
+.insta:hover{
+  background:linear-gradient(to bottom ,rgb(223, 13, 234), rgb(255, 0, 0));
+  transition: 1s;
+  box-shadow: 4px 1px 10px rgb(211, 1, 148);
+  color: #ffffff;
 }
   section{
     min-height: 100vh;
   }
   footer{
-    background-color:  rgb(104, 133, 228);
+    background-color:  rgb(253, 253, 253);
+    text-align: center;
   }
